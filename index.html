@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puja Midde - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #fff;
+      border-right: 2px solid #eee;
+      padding: 30px 20px;
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 15px;
+      padding: 8px 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .sidebar ul li:hover,
+    .sidebar ul li.active {
+      background: #ffc107;
+      color: #000;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .profile-card {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .profile-pic {
+      position: relative;
+    }
+
+    .profile-pic img {
+      width: 300px;
+      height: auto;
+      border: 8px solid #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .profile-text {
+      max-width: 500px;
+    }
+
+    .profile-text h2 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .profile-text p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .signature {
+      font-family: 'Cursive';
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Puja Midde</h1>
+    <ul>
+      <li class="active"><a href="index.html" style="text-decoration: none; color: inherit;">Home</a></li>
+      <li><a href="about.html" style="text-decoration: none; color: inherit;">About Me</a></li>
+      <li><a href="education.html" style="text-decoration: none; color: inherit;">Education</a></li>
+      <li><a href="projects.html" style="text-decoration: none; color: inherit;">Projects</a></li>
+      <li><a href="skills.html" style="text-decoration: none; color: inherit;">Skills</a></li>
+      <li><a href="hobbies.html" style="text-decoration: none; color: inherit;">Hobbies</a></li>
+      <li><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <div class="profile-card">
+      <div class="profile-pic">
+        <img src="images/profile.jpg" alt="Puja Midde">
+      </div>
+      <div class="profile-text">
+        <h2>Student & Aspiring Developer</h2>
+        <p>
+          Hi! I'm Puja Midde, a dedicated student passionate about learning and growing in the field of web development. I enjoy working on projects that challenge my creativity and technical skills. In my free time, I love exploring new technologies, participating in hackathons, and collaborating with peers to build innovative solutions.
+        </p>
+        <div class="signature">Puja Midde</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
